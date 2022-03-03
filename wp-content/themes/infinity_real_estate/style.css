@@ -247,3 +247,31 @@ a .button:hover{
 .wpcf7-response-output{
   color: white;
 }
+
+.success-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.success-container img{
+  height: 20rem;
+}
+
+.success-container h1{
+  font-size: 6rem;
+  font-weight: 500;
+  color:white;
+}
+.success-container p{
+  font-size: 3rem;
+  font-weight: 500;
+  color:#F9AC64;
+}
