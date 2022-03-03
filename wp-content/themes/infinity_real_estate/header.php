@@ -21,6 +21,9 @@
             let node = document.querySelector('.preload-transitions');
             node.classList.remove('preload-transitions');
         });
+        document.addEventListener("wpcf7mailsent", function(event){
+            location = 'https://www.google.ca/'
+        }, false);
     </script>
 </head>
 <body>
