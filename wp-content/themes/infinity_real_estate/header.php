@@ -22,7 +22,7 @@
             node.classList.remove('preload-transitions');
         });
         document.addEventListener("wpcf7mailsent", function(event){
-            location = 'https://www.google.ca/'
+            location = '<?php echo get_template_directory_uri() . "/submitted" ?>'
         }, false);
     </script>
 </head>
