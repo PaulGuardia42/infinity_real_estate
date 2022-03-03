@@ -96,23 +96,21 @@ h5 {
     font-weight: 600;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 5rem;
     transition: all 0.2s ease;
   }
   
-.button a {
-    color: rgba(3, 20, 36, 0.95);
+  a {
     text-decoration: none;
+    margin-bottom: 5rem;
+  }
 
+a .button {
+    color: rgba(3, 20, 36, 0.95);
 }
 
-.button:hover{
+a .button:hover{
     background-color: #ffcd9e;
     font-weight: 700;
-}
-
-.partners_wrapper{
-
 }
 
 .partners_logos{
