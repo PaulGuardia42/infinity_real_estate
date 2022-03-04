@@ -49,6 +49,12 @@ h5
   padding: 0; 
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+  opacity: 0;
+  transition: linear opacity 1s;
+  }
+
 /* DESKTOP */
 .main-container{
       width: 100vw;
