@@ -430,6 +430,28 @@ a .button:hover{
   font-size: 3rem;
   font-weight: 500;
   color:#F9AC64;
+  text-align: center;
+}
+
+@media only screen and (max-width: 430px){
+  .success-container img{
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
+  
+
+  .success-container h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color:white;
+  }
+  .success-container p{
+    font-size: 2rem;
+    width: 70%;
+    font-weight: 500;
+    color:#F9AC64;
+    text-align: center;
+  }
 }
 
 
