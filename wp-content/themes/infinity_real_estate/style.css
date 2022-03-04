@@ -55,10 +55,12 @@ h5
   transition: linear opacity 1s;
   }
 
-  body:not(.form-container) .grecaptcha-badge {
-    opacity: 0;
-    visibility: hidden;
- }
+  .grecaptcha-badge.showgr {
+    visibility: visible;
+    opacity: 1;
+    transition: linear opacity 1s;
+  }
+
 
 /* DESKTOP */
 .main-container{
