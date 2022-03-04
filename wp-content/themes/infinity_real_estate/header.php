@@ -15,20 +15,6 @@
     <meta name="keywords" content="Design, Programming, Development"/>
     <meta name="author" content="Paul Guardia" />
 
-    <!-- Stop Chrome pre-load transition firing bug -->
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded",function(){
-            let node = document.querySelector('.preload-transitions');
-            node.classList.remove('preload-transitions');
-        });
-        document.addEventListener("wpcf7mailsent", function(event){
-            location = '<?php echo get_template_directory_uri() . "/submitted" ?>'
-        }, false);
-        if ( document.URL.includes("<?php echo get_template_directory_uri() . "sign-up-form/" ?>") ) {
-           const badge = document.querySelector('.grecaptcha-badge');
-           badge.classList.add("showgr");
-        }
-    </script>
+
 </head>
 <body>
-
