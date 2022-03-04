@@ -76,7 +76,7 @@ h5
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      animation: animatedBackground .3s ease-in-out;
+      animation: animatedBackground 1s ease-in-out;
 }
 
 /* TABLET */
@@ -94,7 +94,7 @@ h5
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: animatedBackground 10s ease-in-out;
+    animation: animatedBackground 1s ease-in-out;
 
   }
 }
