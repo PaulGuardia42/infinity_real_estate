@@ -10,16 +10,16 @@
 html {
     font-size: 62.5%; 
     margin-top: 0;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
-  font-weight: 300;
-  line-height: 1;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0; 
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -38,16 +38,18 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5 
+{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05rem;
   font-weight: 400;
   line-height: 1.3;
   color: black;
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
-
+/* DESKTOP */
 .main-container{
       width: 100vw;
       height: 100vh;
@@ -60,13 +62,31 @@ h5 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
+}
 
-  .title_wrapper{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+/* TABLET */
+
+/* SAMSUNG GALAXY S10 */
+@media only screen and (max-width: 380){
+  .main-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1.png);
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .title_wrapper img{
@@ -74,6 +94,14 @@ h5 {
     width: auto;
     margin-bottom: 1rem;
   }
+  
+  @media only screen and (max-width: 430px){
+    .title_wrapper img{
+      height:150px;
+      width: auto;
+      margin-bottom: 2rem;
+  }
+} 
 
 
 .header{
@@ -81,12 +109,37 @@ h5 {
     font-size: 5.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
+  
+  @media only screen and (max-width: 430px){
+    .header{
+      color: white;
+      font-size: 2.5rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+  }
+  
   .sub-header{
     color: #F9AC64;
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 430px){
+    .sub-header{
+      color: #F9AC64;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 5rem;
+    }
+  
+    
   }
   
 .button{
@@ -118,11 +171,24 @@ a .button:hover{
   justify-content: space-between;
   align-items: center;
 }
+
 .partners_logos img{
   opacity: .7;
   height: 65px;
   width: auto;
 }
+
+@media only screen and (max-width: 430px){
+  
+.partners_logos img{
+  opacity: .7;
+  height: 45px;
+  padding: 0 2rem;
+  width: auto;
+}
+
+}
+
 
 .partners_title{
   display: flex;
@@ -131,10 +197,18 @@ a .button:hover{
 }
 
 .partners_title .line{
-  content: "";
   background-color: rgba(255, 255, 255, 0.7);
   width: 22.5rem;
   height: 2px;
+}
+
+@media only screen and (max-width: 430px){
+  .partners_title .line{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    height: 2px;
+  }
+  
 }
 
 .partners_title p{
@@ -143,18 +217,30 @@ a .button:hover{
   margin: 2rem 2rem;
 }
 
-.footer{
-  height: 30rem;
-  background-color:rgba(3, 20, 36, 1) ;
-}
 
-.wp-block-contact-form-7-contact-form-selector{
+/* ------------------------ */
+/* WORDPRESS CONTACT FORM 7 */
+/* ------------------------ */
+
+.wp-block-contact-form-7-contact-form-selector
+{
   height: 70%;
   width: 25%;
 }
 
-.form-container{
-  height: 100vh;
+@media only screen and (max-width: 430px){
+  .wp-block-contact-form-7-contact-form-selector
+  {
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+
+}
+.form-container
+{
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -165,12 +251,11 @@ a .button:hover{
   background-size: cover;
 }
 
-.wpcf7{
-
+.wpcf7
+{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .wpcf7-form{
@@ -187,7 +272,7 @@ a .button:hover{
 
 .wpcf7-form input{
   padding: 1.5rem 1.5rem;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
   border-radius: 5px;
   /* width: 100%; */
 }
@@ -215,6 +300,7 @@ a .button:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content:center;
   color: white;
   width: 100%;
 }
@@ -222,6 +308,7 @@ a .button:hover{
   margin-left: 1rem;
   width: 100%;
 }
+
 
 .wpcf7-form .wpcf7-submit{
   font-family: montserrat, sans-serif;
@@ -244,9 +331,27 @@ a .button:hover{
   font-weight: 700;
 }
 
-.wpcf7-response-output{
-  color: white;
+
+.wpcf7-not-valid-tip
+{
+  font-size: 1.2rem;
+  color: #F9AC64;
 }
+
+.wpcf7 form .wpcf7-response-output
+{
+  margin: 0;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  text-align: center;
+  border: none;
+  line-height: 1.4;
+}
+
+/* --------------------------- */
+/* WORDPRESS SUCCESS POST FORM */
+/* --------------------------- */
 
 .success-container{
   height: 100vh;
