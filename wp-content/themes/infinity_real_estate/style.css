@@ -61,6 +61,25 @@ h5
     transition: linear opacity 1s;
   }
 
+  @keyframes animatedBackground {
+    from{
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animatedText {
+    from{
+      opacity: 0;
+      transform: translateY(15px)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
 
 /* DESKTOP */
@@ -99,14 +118,7 @@ h5
   }
 }
 
-@keyframes animatedBackground {
-  from{
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .title_wrapper{
     display: flex;
@@ -119,6 +131,8 @@ h5
     height:200px;
     width: auto;
     margin-bottom: 1rem;
+    animation: animatedText .5s ease-out;
+
   }
   
   @media only screen and (max-width: 430px){
@@ -126,6 +140,8 @@ h5
       height:150px;
       width: auto;
       margin-bottom: 2rem;
+      animation: animatedText .5s ease-out;
+
   }
 } 
 
@@ -136,6 +152,7 @@ h5
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
+    animation: animatedText .5s ease-out;
   }
   
   @media only screen and (max-width: 430px){
@@ -145,6 +162,7 @@ h5
       text-align: center;
       font-weight: 600;
       margin-bottom: 0.5rem;
+      animation: animatedText .5s ease-out;
     }
     
   }
@@ -155,17 +173,17 @@ h5
     font-weight: 500;
     margin-bottom: 3rem;
     text-align: center;
+    animation: animatedText .5s ease-out;
   }
-
+  
   @media only screen and (max-width: 430px){
     .sub-header{
       color: #F9AC64;
       font-size: 1.6rem;
       font-weight: 500;
       margin-bottom: 5rem;
+      animation: animatedText .5s ease-out;
     }
-  
-    
   }
   
 .button{
@@ -176,6 +194,8 @@ h5
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.2s ease;
+    animation: animatedText .5s ease-out;
+
   }
   
   a {
