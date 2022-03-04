@@ -17,6 +17,8 @@
     <meta name="author" content="Jason Paul" />
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/preview-img.png" />
     <meta property="og:image:secure_url" content="<?php echo get_template_directory_uri(); ?>/images/preview-img.png" /> 
+    <meta property="og:image:type" content="image/png" /> 
+
 
 
 </head>
