@@ -276,6 +276,8 @@ a .button:hover{
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  animation: animatedBackground 1.5s ease-in-out;
+
 }
 
 .wpcf7
@@ -391,6 +393,8 @@ a .button:hover{
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  animation: animatedBackground 1.5s ease-in-out;
+
 }
 
 .success-container img{
