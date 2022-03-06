@@ -105,7 +105,7 @@ h5
   .main-container{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1.png);
+    background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1_small.png);
     background-repeat: no-repeat;
     background-position: 60% 50%;
     background-size: cover;
@@ -297,7 +297,13 @@ a .button:hover{
   background-position: 50% 50%;
   background-size: cover;
   animation: animatedBackground 1.5s ease-in-out;
+}
 
+@media only screen and (min-width: 430px){
+  .form-container
+{
+  background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1_small.png);
+}
 }
 
 .wpcf7
@@ -415,6 +421,14 @@ a .button:hover{
   background-size: cover;
   animation: animatedBackground 1.5s ease-in-out;
 
+}
+
+
+@media only screen and (min-width: 430px){
+  .success-container
+{
+  background-image: linear-gradient(rgba(3, 20, 36, 0.95), rgba(3, 20, 36, 0.95)), url(images/background_image_1_small.png);
+}
 }
 
 .success-container img{
